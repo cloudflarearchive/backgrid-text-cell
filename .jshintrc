@@ -20,7 +20,6 @@
   "nonstandard": true,
 
   "globals": {
-    "moment": false,
     "Backgrid": false,
     "Backbone": false,
     "_": false
