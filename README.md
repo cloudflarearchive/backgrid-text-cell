@@ -1,4 +1,7 @@
-backgrid-text-cell
+backbone-text-cell
+==================
+
+[![Build Status](https://travis-ci.org/wyuenho/backgrid-text-cell.png?branch=master)](https://travis-ci.org/wyuenho/backgrid-text-cell)
 
 Dependencies
 ============
