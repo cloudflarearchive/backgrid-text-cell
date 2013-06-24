@@ -22,17 +22,15 @@ module.exports = function (grunt) {
         force: true
       },
       dist:[
-        "dist/**/*"
+        "dist",
+        "components"
       ],
       api: [
-        "api/**/*"
+        "api"
       ],
       default: [
         "*.min.*",
         "test/coverage/**/*"
-      ],
-      components:[
-        "components/**/*"
       ]
     },
     concat: {
