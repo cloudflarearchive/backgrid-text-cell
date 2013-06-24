@@ -1,11 +1,10 @@
 /*
- backgrid-text-cell
- A backgrid extension
- https://github.com/wyuenho/backgrid-text-cell
+  backgrid-text-cell
+  http://github.com/wyuenho/backgrid-text-cell
 
- Copyright (c) 2013 Jimmy Yuen Ho Wong and contributors
- Licensed under the MIT license.
- */
+  Copyright (c) 2013 Jimmy Yuen Ho Wong and contributors
+  Licensed under the MIT license.
+*/
 
 // jshint globalstrict:true, node:true
 
@@ -21,14 +20,10 @@ module.exports = function (grunt) {
       options: {
         force: true
       },
-      dist:[
-        "dist",
-        "components"
-      ],
       api: [
-        "api"
+        "api/**/*"
       ],
-      default: [
+      "default": [
         "*.min.*",
         "test/coverage/**/*"
       ]
@@ -43,22 +38,21 @@ module.exports = function (grunt) {
             '*/\n\n'
         },
         src: [
-          "src/*.js"
+          "backgrid-text-cell.js"
         ],
-        dest: "dist/backgrid-text-cell.js"
+        dest: "backgrid-text-cell.js"
       }
     },
     jasmine: {
       test: {
         version: "1.3.1",
         src: [
-          "src/backgrid-text-cell.js"
+          "backgrid-text-cell.js"
         ],
         options: {
           specs: [
             "test/text-cell.js"
           ],
-          /**
           template: require("grunt-template-jasmine-istanbul"),
           templateOptions: {
             coverage: "test/coverage/coverage.json",
@@ -69,19 +63,19 @@ module.exports = function (grunt) {
               }
             }
           },
-          **/
           vendor: [
-            "components/jquery/jquery.js",
-            "components/underscore/underscore.js",
-            "components/backbone/backbone.js",
-            "components/backgrid/lib/backgrid.js"
+            "test/vendor/js/jquery.js",
+            "test/vendor/js/bootstrap.js",
+            "test/vendor/js/underscore.js",
+            "test/vendor/js/backbone.js",
+            "test/vendor/js/backgrid.js",
           ]
         }
       }
     },
     jsduck: {
       main: {
-        src: ["src/*.js"],
+        src: ["backgrid-text-cell.js"],
         dest: "api",
         options: {
           "title": "backgrid-text-cell",
@@ -98,7 +92,7 @@ module.exports = function (grunt) {
           compile: true
         },
         files: {
-          "dist/backgrid-text-cell.css": ["src/*.css"]
+          "backgrid-text-cell.css": ["backgrid-text-cell.css"]
         }
       },
       "default": {
@@ -106,7 +100,7 @@ module.exports = function (grunt) {
           compress: true
         },
         files: {
-          "dist/backgrid-text-cell.min.css": ["src/*.css"]
+          "backgrid-text-cell.min.css": ["backgrid-text-cell.css"]
         }
       }
     },
@@ -118,7 +112,7 @@ module.exports = function (grunt) {
       },
       "default": {
         files: {
-          "dist/backgrid-text-cell.min.js": ["src/*.js"]
+          "backgrid-text-cell.min.js": ["backgrid-text-cell.js"]
         }
       }
     }
