@@ -1,0 +1,17 @@
+{
+  "name": "backgrid-text-cell",
+  "version": "0.3.1",
+  "main": "dist/backgrid-text-cell.js",
+  "ignore": [
+    ".jshintrc",
+    "README.md"
+  ],
+  "dependencies": {
+    "backgrid": "git://github.com/wyuenho/backgrid.git"
+  },
+  "devDependencies": {
+    "jquery":"1.9.1",
+    "backbone":"1.0.0",
+    "underscore":"1.4.4"
+  }
+}
