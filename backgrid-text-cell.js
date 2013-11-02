@@ -116,7 +116,7 @@
 
         model.set(column.get("name"), newValue);
         this.$el.modal("hide");
-        model.trigger("backgrid:edited", model, column, newValue);
+        model.trigger("backgrid:edited", model, column, new Backgrid.Command(e));
       }
       else if (e.type != "hide") this.$el.modal("hide");
     },
