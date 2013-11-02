@@ -32,10 +32,10 @@
     tagName: "div",
 
     /** @property */
-    className: "modal hide fade",
+    className: "modal fade",
 
     /** @property {function(Object, ?Object=): string} template */
-    template: _.template('<form><div class="modal-header"><button type="button" class="close" data-dismiss="modal">&times;</button><h3><%- column.get("label") %></h3></div><div class="modal-body"><textarea cols="<%= cols %>" rows="<%= rows %>"><%- content %></textarea></div><div class="modal-footer"><input class="btn" type="submit" value="Save"/></div></form>', null, {variable: null}),
+    template: _.template('<div class="modal-dialog"><div class="modal-content"><form><div class="modal-header"><button type="button" class="close" data-dismiss="modal" aria-hidden="true">x</button><h4 class="modal-title" id="myModalLabel"><%- column.get("label") %></h4></div><div class="modal-body"><textarea cols="<%= cols %>" rows="<%= rows %>"><%- content %></textarea></div><div class="modal-footer"><input class="btn btn-primary" type="submit" value="Save"/></div></form></div></div>', null, {variable: null}),
 
     /** @property */
     cols: 80,
@@ -116,6 +116,7 @@
 
         model.set(column.get("name"), newValue);
         this.$el.modal("hide");
+        model.trigger("backgrid:edited", model, column, newValue);
       }
       else if (e.type != "hide") this.$el.modal("hide");
     },
