@@ -15,6 +15,7 @@
     "backgrid-text-cell.css"
   ],
   "dependencies": {
+    "jashkenas/underscore": "*",
     "jashkenas/backbone": "*",
     "wyuenho/backgrid": "*"
   },
