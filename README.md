@@ -6,7 +6,7 @@ backbone-text-cell
 Dependencies
 ============
 
-[bootstrap-modal.js](http://twitter.github.com/bootstrap/javascript.html#modals)
+[bootstrap-modal.js >= 3.0](http://getbootstrap.com/javascript/#modals)
 
 Usage
 ====

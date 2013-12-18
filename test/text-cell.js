@@ -39,7 +39,7 @@ describe("A TextareaEditor", function () {
 
   beforeEach(function () {
     editor = new Backgrid.Extension.TextareaEditor({
-      formatter: Backgrid.Extension.TextCell.prototype.formatter,
+      formatter: new Backgrid.Extension.TextCell.prototype.formatter,
       model: new Backbone.Model({
         name: "name <script></script>"
       }),
