@@ -11,5 +11,5 @@ Dependencies
 Usage
 ====
 
-See the [TextCell](http://wyuenho.github.com/backgrid/#api-text-cell) section in
+See the [TextCell](http://backgridjs.com/ref/extensions/text-cell.html) section in
 the documentation.
