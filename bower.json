@@ -1,0 +1,27 @@
+{
+  "name": "backgrid-text-cell",
+  "main": "backgrid-text-cell.js",
+  "version": "0.3.0-beta",
+  "description": "Backgrid.js extension for long texts.",
+  "homepage": "https://github.com/wyuenho/backgrid-text-cell",
+  "authors": [
+    "Jimmy Yuen Ho Wong <wyuenho@gmail.com>"
+  ],
+  "keywords": [
+    "backbone",
+    "backgrid"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "backbone": "~1.1.0",
+    "backgrid": "0.3.0-beta",
+    "underscore": "~1.5.2"
+  }
+}
