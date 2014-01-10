@@ -1,7 +1,7 @@
 {
   "name": "backgrid-text-cell",
   "main": "backgrid-text-cell.js",
-  "version": "0.3.0",
+  "version": "0.3.1",
   "description": "Backgrid.js extension for long texts.",
   "homepage": "https://github.com/wyuenho/backgrid-text-cell",
   "authors": [
@@ -21,7 +21,7 @@
   ],
   "dependencies": {
     "backbone": "~1.1.0",
-    "backgrid": "0.3.0-beta",
+    "backgrid": "~0.3.0",
     "underscore": "~1.5.2"
   }
 }
