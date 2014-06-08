@@ -7,13 +7,17 @@
 */
 (function (root, factory) {
 
-  // CommonJS
-  if (typeof exports == "object") {
+  if (typeof define === 'function' && define.amd) {
+    // AMD. Register as an anonymous module.
+    define(['underscore', 'backgrid'], factory);
+  } else if (typeof exports === 'object') {
+    // CommonJS
     module.exports = factory(require("underscore"),
                              require("backgrid"));
+  } else {
+    // Browser globals
+    factory(root._, root.Backgrid);
   }
-  // Browser
-  else factory(root._, root.Backgrid);
 
 }(this, function (_, Backgrid)  {
 
