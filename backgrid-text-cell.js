@@ -32,7 +32,9 @@
     className: "modal fade",
 
     /** @property {function(Object, ?Object=): string} template */
-    template: _.template('<div class="modal-dialog"><div class="modal-content"><form><div class="modal-header"><button type="button" class="close" data-dismiss="modal">&times;</button><h3><%- column.get("label") %></h3></div><div class="modal-body"><textarea cols="<%= cols %>" rows="<%= rows %>"><%- content %></textarea></div><div class="modal-footer"><input class="btn btn-primary" type="submit" value="Save"/></div></form></div></div>', null, {variable: null}),
+    template: function (data) {
+      return '<div class="modal-dialog"><div class="modal-content"><form><div class="modal-header"><button type="button" class="close" data-dismiss="modal">&times;</button><h3>' + data.column.get("label")  + '</h3></div><div class="modal-body"><textarea cols="' + data.cols + '" rows="' + data.rows + '">' + data.content + '</textarea></div><div class="modal-footer"><input class="btn btn-primary" type="submit" value="Save"/></div></form></div></div>';
+    },
 
     /** @property */
     cols: 80,
