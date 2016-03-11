@@ -140,7 +140,7 @@ Ext.data.JsonP.Backgrid_Extension_TextareaEditor({
 
     ]
   },
-  "linenr": 20,
+  "linenr": 24,
   "files": [
     {
       "filename": "backgrid-text-cell.js",
