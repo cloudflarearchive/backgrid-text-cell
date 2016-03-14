@@ -40,7 +40,7 @@
     "karma-safari-launcher": "^0.1.1"
   },
   "dependencies": {
-    "backgrid": "^0.3.7",
+    "backgrid": "~0.3.7",
     "underscore": "^1.8.3",
     "bootstrap": "^3.1.1"
   }
