@@ -21,13 +21,15 @@
 
 }(this, function (_, Backgrid)  {
 
+  var exports = {};
+
   /**
      Renders a form with a text area and a save button in a modal dialog.
 
      @class Backgrid.Extension.TextareaEditor
      @extends Backgrid.CellEditor
   */
-  var TextareaEditor = Backgrid.Extension.TextareaEditor = Backgrid.CellEditor.extend({
+  var TextareaEditor = exports.TextareaEditor = Backgrid.Extension.TextareaEditor = Backgrid.CellEditor.extend({
 
     /** @property */
     tagName: "div",
@@ -161,7 +163,7 @@
      @class Backgrid.Extension.TextCell
      @extends Backgrid.StringCell
   */
-  Backgrid.Extension.TextCell = Backgrid.StringCell.extend({
+  exports.TextCell = Backgrid.Extension.TextCell = Backgrid.StringCell.extend({
 
     /** @property */
     className: "text-cell",
@@ -170,5 +172,7 @@
     editor: TextareaEditor
 
   });
+
+  return exports;
 
 }));
