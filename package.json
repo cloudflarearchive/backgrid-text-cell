@@ -3,6 +3,7 @@
   "version": "0.3.7",
   "description": "Backgrid.js extension for long texts.",
   "main": "backgrid-text-cell.js",
+  "style": "backgrid-text-cell.css",
   "scripts": {
     "test": "karma start --single-run --browsers Chrome,Firefox"
   },
