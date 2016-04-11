@@ -18,7 +18,7 @@
   ],
   "dependencies": {
     "backgrid": "~0.3.7",
-    "underscore": "^1.8.3",
+    "underscore": "^1.8.0",
     "bootstrap": "^3.1.1"
   }
 }
