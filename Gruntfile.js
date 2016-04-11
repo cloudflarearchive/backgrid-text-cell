@@ -44,7 +44,6 @@ module.exports = function (grunt) {
           "title": "backgrid-text-cell",
           "no-source": true,
           "categories": "categories.json",
-          "warnings": "-no_doc",
           "pretty-json": true
         }
       }
