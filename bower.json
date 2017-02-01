@@ -4,7 +4,7 @@
   "description": "Backgrid.js extension for long texts.",
   "homepage": "https://github.com/wyuenho/backgrid-text-cell",
   "authors": [
-    "Jimmy Yuen Ho Wong <wyuenho@gmail.com>"
+    "Cloudflare, Inc <jwong@cloudflare.com>"
   ],
   "keywords": [
     "backbone",
